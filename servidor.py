@@ -20,7 +20,7 @@ while True:
         resultado = ""        
 
     try:
-        with open("/home/python_prueba/clase_sistemas_distribuidos/datos.txt","r") as leer_texto:
+        with open("datos.txt","r") as leer_texto:
             texto = leer_texto.readlines()
             numero_lineas = len(texto)
     except:
@@ -38,14 +38,14 @@ while True:
     
     elif numero_lineas <= 5 and  contador != numero_lineas:
         contador = 0
-        with open("/home/python_prueba/clase_sistemas_distribuidos/datos.txt","w") as archivo_texto:
+        with open("datos.txt","w") as archivo_texto:
                 texto = f"{resultado}\n"
                 if texto != "\n":
                     archivo_texto.write(texto)
                 conexion.sendall(b"Registro Ok truncando")                
 
     else:    
-        with open("/home/python_prueba/clase_sistemas_distribuidos/datos.txt","a") as archivo_texto:
+        with open("datos.txt","a") as archivo_texto:
             texto = f"{resultado}\n"
             archivo_texto.write(texto)
             conexion.sendall(b"Registro Ok agregando")                    
