@@ -12,6 +12,7 @@ while True:
     conexion.sendall(b"Mensaje enviado desde el servidor")
 
     resultado = conexion.recv(1024) # Buffer
+    resultado = resultado.decode("utf-8")
     print(resultado)
 
     conexion.close()
