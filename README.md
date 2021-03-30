@@ -1,5 +1,17 @@
 # clase_sistemas_distribuidos
 
+Integrantes:
+
+WILSON GUTIERREZ LANCHEROS-1621024374
+ALEXANDER CACAIS UMBARILA-100233393
+LUZ ANGELA RAYO PALENCIA-1921980146
+MARIA PAULA HOYOS ORTIZ - 1810010181
+
+
+
+
+
+
 Este repositorio se creó para la clase de sistemas distribuidos dictado en la universidad politecnico grancolombiano
 
 
